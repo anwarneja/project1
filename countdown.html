@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="countdown.css">
+    
+</head>
+<body>
+   
+
+    <div class="container">
+       <div class="wrapper">
+       <div class="left-panel">
+        
+          
+          <ul id="titleList"></ul>
+       </div>
+       <div class="right-panel">
+          
+          <button onclick="addTitle()">Set</button>
+          <button onclick="resetTitles()">Reset</button>
+          <button onclick="saveTitles()">Save</button>  
+          
+       </div>
+     </div>
+
+    
+      <div class="background-overlay"></div>
+      
+      <div  class="head"><h2> Launching soon...</h2> </div>
+      
+      <div class="content">
+        
+      
+
+        <div class="launch-time">
+          <div>
+            <p id="days">00
+            </p>
+            <span id=>Days</span>
+            
+          </div>
+          <div>
+            <p id="hours">00</p>
+            <span>Hours</span>
+            
+          </div>
+          <div>
+            <p id="minutes">00</p>
+            <span>Minutes</span>
+            
+          </div>
+          <div>
+            <p id="seconds">00</p>
+            <span>Seconds</span>
+            
+          </div>
+
+        </div>
+      
+        <input type="datetime-local" id="targetDateTime">
+        <input type="text" id="titleInput" placeholder="Enter new title mm" >
+        <button type="button" class="custom-button" onclick="setCustomTarget()">ADD</button>
+             
+        
+        
+
+
+      
+        
+         
+      </div>
+      <P id="countdown-finished-message" style="display: none;">Countdown finished!</P>
+
+      <img src="/Launching_page_img-1/images/rocket.png" class="rocket">
+    </div>
+<script src="countdown.js"></script>
+</body>
+</html>

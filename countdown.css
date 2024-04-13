@@ -1,0 +1,291 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins",sans-serif;
+  box-sizing: border-box;
+
+}
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position:center ;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    
+    background-size: cover;
+    background-image: url(/img/prateek-katyal-3xBgdTaog4c-unsplash.jpg);
+    background: transparen;
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+
+}
+.background-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-size: cover;  
+    background-position: center;
+    
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.content{
+    
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    
+    
+
+    
+}
+
+.head{
+    position: relative;
+    top: 180px;
+    left: 30px;
+    font-style: oblique;
+    font-variant: inherit;
+    font-weight: 60px bold;
+    font-size:50px ;
+    color: hsla(120, 87%, 3%, 0.726);
+    border: saddlebrown;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+.content button {
+    background: transparent wheat ;
+    transform: scale(1.1);
+    border:5px solid rgb(11, 219, 174);
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    background: transparent;
+}
+.content button img{
+
+    width: 15px;
+    margin-left: 10px;
+}
+.launch-time{
+    position: relative;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   top: 50%;
+   left: 25px;
+   
+   
+   margin-right: 19px;
+
+}
+.launch-time div{
+  flex-basis: 100px;
+  position: relative;
+  left:40vh;
+  top: 51px;
+  
+  margin-right: 12vh;
+}
+.launch-time div p{
+    position: relative;
+
+    font-size: 06rem;
+    margin-bottom: -125vh; 
+    font-weight: bold;
+}
+.launch-time p{
+    font-size: 250px;
+    
+    background:rgba(255, 255, 255, 0.884);
+    box-shadow: white;
+}
+.launch-time div span{
+    position: absolute;
+    color: white;
+    top: 20vh;
+    left: 0;
+    font-size: 25px;
+    
+    
+    font-weight: bold;
+    
+}
+.rocket{
+    width: 25px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation-name: rocket;
+    animation-iteration-count: infinite;
+    animation-duration: 17s;
+    animation-timing-function: ease-out;
+    
+}
+@keyframes rocket{
+0%{
+    bottom: 0;
+    opacity: 2.5;
+}
+100%{
+    opacity: 2.5;
+    bottom: 100%;
+    width: 30vh;
+    color: rgb(180, 159, 180);
+    
+}
+
+}
+#countdown-finished-message{
+    position: absolute;
+    left: 40%;
+    top: 07vh;
+    background:linear-gradient(to bottom,#09d435,#1a4f85);
+    ;
+    padding: 8px ;
+    width: 50vh;
+    height: 20vh;
+    color: rgb(172, 38, 15);
+    border: whitesmoke;
+    border-radius: 20px;
+    box-shadow: wheat 50px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px ;
+    box-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+#days,#hours,#minutes,#seconds {
+    
+    transition: transform 0.3s ease-in-out;
+    
+}
+#days,#hours,#minutes,#seconds:hover{
+    color:#533343ec;
+    
+    display: flex;
+    transform: scale(1.1);
+}
+button[type="button"]{
+    transition: background-color 0.4s ease-in-out,color 0.4s ease-in-out;
+    
+   border-radius: 20px;
+   position: absolute;
+   top: -87px;
+
+}
+button[type="button"]:hover{
+    background-color:rgba(255, 255, 255, 0.185);
+    color: #fff;
+    
+    
+
+    
+}
+#targetDateTime {
+        position: absolute;
+    
+        top: -42vh;
+        left: 80vh;
+        font-family: fantasy;
+        padding: 15px 17px;
+}
+.custom-button{
+    position: relative;
+    left: 19vh;
+    top: 1110px;
+    
+    color: white;
+    background-color: brown;
+    visibility: visible;
+    z-index: 999;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+#titleInput{
+   position: absolute;
+   left: 62%;
+   top: -175px;
+   
+   padding-left: 25px;
+   font-size: 36px;
+   border: 4px solid #cccccc85;
+   border-radius: 5px;
+   width: 390px;
+   background-color: transparent;
+   opacity: 01;
+   justify-content: center;
+   align-items: center;
+   color:saddlebrown;
+
+}
+.placeholder::placeholder{
+    color: #316e3e;
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+    top: 30vh;
+    position: relative;
+}
+.left-panel{
+    width: 45%;
+    
+}
+.right-panel{
+    width: 45%;
+    background-color: #110d0d;
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 55px;
+    position: absolute;
+    left: 290px;
+    top: 70px;
+}
+.right-panel button{
+    border: 2px solid #b43838;
+    padding: 10px 20px;
+    background-color: transparen;
+    color: #e95555d5;
+    font-size: 27px;
+    font-weight: 300px bold;
+    border-radius: 10px;
+    
+}
+#titleInput{
+    margin-right: 100px;
+}
